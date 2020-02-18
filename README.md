@@ -50,7 +50,7 @@ $ cd lkv373a-relay
 $ virtualenv venv
 $ . venv/bin/activate
 $ pip install -r requirements.txt
-$ ./lkv373a-relay.py
+$ ./lkv373a-relay.py 'rtmp://twitch.tv/live/your-stream-key'
 ~~~~
 
 
