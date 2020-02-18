@@ -1,0 +1,2 @@
+STREAM_OPTIONS="-b 6000 -r 60 -s=1920:1080:flags=lanczos"
+STREAM_URL='rtmp://twitch.tv/live/your-key'

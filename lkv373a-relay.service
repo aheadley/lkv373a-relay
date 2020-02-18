@@ -1,0 +1,13 @@
+[Unit]
+Description=LKV373A HDMI transcoding relay
+After=network.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/sysconfig/lkv373a-relay
+ExecStart=/usr/local/bin/lkv373a-relay \
+	$STREAM_OPTIONS \
+	${STREAM_URL}
+Restart=on-failure
+User=nobody
+Group=nobody
