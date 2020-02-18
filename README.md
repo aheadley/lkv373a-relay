@@ -23,7 +23,7 @@ The daemon can be run directly, through systemd, or in Docker.
 $ git clone https://github.com/aheadley/lkv373a-relay.git
 $ cd lkv373a-relay
 $ docker build . -t lkv373a-relay:latest
-$ docker run -p 5004:5004/udp lkv373a-relay 'rtmp://twitch.tv/live/your-stream-key'
+$ docker run -p 5004:5004/udp lkv373a-relay:latest 'rtmp://twitch.tv/live/your-stream-key'
 ~~~~
 
 ### SystemD
@@ -89,4 +89,4 @@ optional arguments:
   -v, --verbose
 ~~~~
 
-**NOTE** The docker image already includes ffmpeg and the `-F` option.
+**NOTE:** The docker image already includes ffmpeg and the `-F` option.
